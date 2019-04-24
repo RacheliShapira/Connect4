@@ -1,0 +1,144 @@
+body {
+    background-image: url(pic.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* ---------------EnterScreen--------------- */
+#enterScreen {
+    display: block;
+    z-index: 9;
+    position: absolute;
+    left: 30%;
+    padding-top: 40px;
+    border: 2px solid black;
+    background: #205eb9;
+    border-radius: 50%;
+    text-align: center;
+    height: 550px;
+    width: 550px;
+    justify-content: center;
+    box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.72);
+}
+
+#enterScreen h2 {
+    color: #c1701a;
+    filter: drop-shadow(0 3px black);
+    font-size: 50px;
+}
+#enterScreen input {
+    border: 1px black solid;
+    text-align: center;
+    padding: 3px;
+}
+
+#enterScreen button {
+    border: 2px black solid;
+    padding: 5px;
+    background: #c1701a;
+    box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.72);
+}
+
+/* ---------------PlayScreen--------------- */
+
+#playScreen {
+    opacity: 0;
+}
+
+#reset {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    border: 2px black solid;
+    padding: 5px;
+    background: #c1701a;
+    box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.72);
+}
+
+#players {
+    position: absolute;
+    top: 40px;
+    left: 180px;
+    border: 2px black solid;
+    padding: 5px;
+    background: #dfdf21;
+    box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.72);
+}
+
+#playerOne {
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    height: 30px;
+    width: 100px;
+    border: 2px black solid;
+    background: #c92323;
+    border-radius: 50%;
+}
+
+#playerTwo {
+    position: absolute;
+    top: 300px;
+    left: 80px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    height: 30px;
+    width: 100px;
+    border: 2px black solid;
+    background: #2c7e33;
+    border-radius: 50%;
+}
+
+#winner {
+    opacity: 0;
+    position: absolute;
+    justify-content: center;
+    left: 27%;
+    z-index: 9;
+    padding: 70px;
+    font-size: 80px;
+    text-align: center;
+    border: 3px black solid;
+    border-radius: 50%;
+}
+
+.board {
+    position: absolute;
+    left: 25%;
+    display: flex;
+}
+
+.slot {
+    border: 3px solid #c1701a;
+    background: #dfdf21;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hole {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: white;
+}
+
+.player1 .hole {
+    background: #c92323;
+    transition: left 1s linear;
+}
+
+.player2 .hole {
+    background: #2c7e33;
+}
+
+.winners .hole {
+    background-image: url(win.gif);
+    background-size: 100%;
+}
